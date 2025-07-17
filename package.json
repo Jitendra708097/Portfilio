@@ -1,0 +1,28 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "This is my portfolio website",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jitendra708097/Portfilio.git"
+  },
+  "keywords": [
+    "1234"
+  ],
+  "author": "Jitendra Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jitendra708097/Portfilio/issues"
+  },
+  "homepage": "https://github.com/Jitendra708097/Portfilio#readme",
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  }
+}
