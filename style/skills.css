@@ -1,0 +1,115 @@
+.skills-container {
+  margin-top: 100px;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(120deg, #032e64 60%, #e0e7ff 100%);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(60, 60, 120, 0.12);
+}
+
+.skills-container > div {
+  margin-bottom: 2.5rem;
+  background: #e0e0e0;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(99, 102, 241, 0.07);
+  padding: 2rem 1.5rem;
+  transition: box-shadow 0.2s;
+  border: 2px solid #e0e7ff;
+}
+
+.skills-container > div:hover {
+  box-shadow: 0 6px 24px rgba(99, 102, 241, 0.13);
+}
+
+.skills-container h1 {
+  font-size: 2rem;
+  color: #3b3b5c;
+  margin-bottom: 1.2rem;
+  letter-spacing: 1px;
+  text-align: left;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 500;
+  letter-spacing: normal;
+}
+
+.skills-container h2 {
+  color: #4f46e5;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+.skills-container h3 {
+  color: #6366f1;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.skills-container ul {
+  list-style: disc inside;
+  margin-bottom: 1.2rem;
+  padding-left: 1.2rem;
+}
+
+.skills-container li {
+  font-size: 1.08rem;
+  color: #22223b;
+  margin-bottom: 0.4rem;
+  padding-left: 0.2rem;
+  transition: color 0.2s;
+  font-family: 'Arial', sans-serif;
+  font-weight: 400; 
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.2s, font-weight 0.2s, letter-spacing 0.2s;
+}
+
+.skills-container li:hover {
+  color: #6366f1;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive Layout */
+@media (min-width: 900px) {
+  .skills-container {
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3rem 3rem;
+  }
+  .skills-container > div {
+    flex: 1 1 350px;
+    min-width: 320px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 899px) {
+  .skills-container {
+    display: block;
+    padding: 1rem 0.5rem;
+  }
+  .skills-container > div {
+    margin-bottom: 1.5rem;
+    padding: 1.2rem 0.7rem;
+  }
+}
+
+/* Accent bar under section headings */
+.skills-container h1::after,
+.skills-container h2::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: linear-gradient(90deg, #6366f1, #818cf8);
+  border-radius: 2px;
+  margin-top: 6px;
+}
